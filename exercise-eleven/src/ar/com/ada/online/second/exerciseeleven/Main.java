@@ -11,21 +11,21 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// Variables declaration
+	// Variables
         int seniority, bonus;
 
-    //seniority input
+    //ingreso de antiguedad
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Ingrese la antigüedad laboral: ");
         seniority = keyboard.nextInt();
 
-        //Calculation of total amount to pay
+        //Calculo del bono a pagar
         if(seniority>5){
             bonus = 1000;
         } else{
             bonus = seniority * 100;
         }
-
+        //Impresión de resultado
         System.out.println("El bono es de: $" + bonus);
     }
 }
